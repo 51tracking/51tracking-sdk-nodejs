@@ -1,0 +1,33 @@
+{
+  "name": "51tracking",
+  "version": "0.1.0",
+  "description": "node.js SDK for 51Tracking API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "51tracking"
+  ],
+  "author": {
+    "name": "51Tracking",
+    "email": "service@51tracking.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/51tracking/51tracking-sdk-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/51tracking/51tracking-sdk-nodejs/issues"
+  },
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.6.4"
+  }
+}
