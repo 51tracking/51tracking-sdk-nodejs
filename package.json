@@ -1,6 +1,6 @@
 {
   "name": "51tracking",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "node.js SDK for 51Tracking API",
   "main": "src/index.js",
   "scripts": {

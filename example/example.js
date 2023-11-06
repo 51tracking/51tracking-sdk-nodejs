@@ -15,17 +15,6 @@ try {
 
 
 // try {
-//     // Detect courier (couriers/detect)
-//     const params = {'tracking_number': '9400111899562537624326'}
-//     tracking51.couriers.detect(params)
-//         .then(result => console.log(result))
-//         .catch(e => console.log(e))
-// } catch (error) {
-//     console.error('An error occurred:', error.message)
-// }
-
-
-// try {
 //     // Create a Tracking (trackings/create)
 //     const params = {
 //         'tracking_number': '9400111899562537624326',

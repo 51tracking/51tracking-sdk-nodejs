@@ -16,15 +16,6 @@ class Couriers {
         return response
     }
 
-    detect(params) {
-        if (!params.tracking_number) {
-            throw new Error('Tracking number cannot be empty')
-        }
-        const apiPath =  "detect"
-        const response = Request.sendApiRequest(this.apiModule + '/' + apiPath, this.apiKey, "POST", params)
-        return response
-    }
-
 }
 
 module.exports = Couriers

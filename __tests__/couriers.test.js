@@ -27,23 +27,5 @@ describe('Couriers', () => {
       })
     })
   
-    describe('detect', () => {
-      it('should throw an error when tracking_number is missing', () => {
-        const apiKey = 'your-api-key'
-        const couriers = new Couriers(apiKey)
-  
-        expect(() => couriers.detect({})).toThrow('Tracking number cannot be empty')
-      })
-  
-      it('should send a POST request to /couriers/detect with tracking_number', () => {
-        const apiKey = 'your-api-key'
-        const couriers = new Couriers(apiKey)
-        const sendApiRequestMock = jest.spyOn(Request, 'sendApiRequest').mockReturnValue({})
-  
-        const params = { tracking_number: 'your-tracking-number' }
-        couriers.detect(params)
-  
-        expect(sendApiRequestMock).toHaveBeenCalledWith('couriers/detect', apiKey, 'POST', params)
-      })
-    })
-  })
+    
+})
