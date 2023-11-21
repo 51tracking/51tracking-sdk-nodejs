@@ -29,13 +29,9 @@ npm install 51tracking
 const Tracking51 = require('51tracking')
 const key = 'you api key'
 const tracking51 = new Tracking51(key)
-try {
-    tracking51.couriers.getAllCouriers()
-        .then(result => console.log(result))
-        .catch(e => console.log(e))
-} catch (error) {
-    console.error('An error occurred:', error.message)
-}
+tracking51.couriers.getAllCouriers()
+    .then(result => console.log(result))
+    .catch(e => console.log(e))
 ```
 
 ## Testing
@@ -45,16 +41,12 @@ npm run test or npm test
 
 ## Error handling
 
-只需添加一个 try-catch 块即可
+对于异步操作，可以使用 Promise 的 catch 方法进行监听异常
 
 ```javascript
-try {
-    tracking51.couriers.getAllCouriers()
-        .then(result => console.log(result))
-        .catch(e => console.log(e))
-} catch (error) {
-    console.error('An error occurred:', error.message)
-}
+tracking51.couriers.getAllCouriers()
+    .then(result => console.log(result))
+    .catch(e => console.error('An error occurred:', e.message))
 
 ```
 
